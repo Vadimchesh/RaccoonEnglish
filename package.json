@@ -1,0 +1,32 @@
+{
+  "name": "raccoon",
+  "version": "1.0.0",
+  "description": "Improve you English skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc app.ts && node app.js && rm -rf app.js",
+    "build": "esbuild app.jsx --bundle --outfile=out.js",
+    "build:browser": "esbuild app.jsx --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vadimchesh/RaccoonEnglish.git"
+  },
+  "keywords": [],
+  "author": "Vadzim Lindo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vadimchesh/RaccoonEnglish/issues"
+  },
+  "homepage": "https://github.com/Vadimchesh/RaccoonEnglish#readme",
+  "dependencies": {
+    "esbuild": "^0.12.8"
+  },
+  "browser": {
+    "path": "path-browserify"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}
