@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["google", "prettier"],
+  "globals": {
+    "Atomics": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": 2,
+    "new-cap": "off",
+    "require-jsdoc": "off",
+    "no-undef": "error"
+  }
+}
